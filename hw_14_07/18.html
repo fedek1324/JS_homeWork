@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = init;
+
+        function oncl() {
+            var inp = document.getElementById("input");
+            inp.value = "buuu";
+        }
+        
+        function init() {
+            var button = document.getElementById("button");
+            button.onclick = oncl;
+        }
+    </script>
+
+    <button id="button">Here comes alert</button>
+    <input id="input" type="text" placeholder="click the btn">
+</body>
+</html>
