@@ -1,3 +1,4 @@
+// 6
 var arr = [];
 var interCount = 3;
 for (let i = 0; i < interCount; i++) {

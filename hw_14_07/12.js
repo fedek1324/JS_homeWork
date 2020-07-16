@@ -1,3 +1,4 @@
+// 12
 function getDivisors(num) {
     var divisorsArr = [];
     for (let i = 1; i <= num; i++) {

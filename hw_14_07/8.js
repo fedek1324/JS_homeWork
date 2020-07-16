@@ -1,3 +1,4 @@
+// 8
 var arr = [5,5,1,4];
 var res = -1;
 for (let i = 1; i < arr.length; i++) {

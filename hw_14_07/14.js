@@ -1,3 +1,4 @@
+// 14
 function inArray(word, arr) {
     return arr.includes(word);
 }

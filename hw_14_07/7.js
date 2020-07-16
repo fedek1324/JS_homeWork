@@ -1,3 +1,4 @@
+// 7
 function arrayFill(char, count) {
     var arr = [];
     for (let i = 0; i < count; i++) {

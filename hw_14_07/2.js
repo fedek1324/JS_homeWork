@@ -1,3 +1,4 @@
+// 2
 var str = "123456"
 var strArr = str.split('');
 var strArrRev = strArr.reverse();
