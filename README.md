@@ -1,1 +1,2 @@
-Welcome to home work folder!
+Welcome to home work folder!\n
+Fedor Kobyakov
