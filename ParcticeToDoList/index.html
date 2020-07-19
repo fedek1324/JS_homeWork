@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="todo">
+        <h1>Awesome todo list <i id="pencil" class="fas fa-pencil"></i></h1>
+
+        <input type="text" placeholder="Write your todo here">
+
+        <ul class="todos">
+            <li>
+                <span class="removeBtn"><i class="fas fa-trash-alt"></i></span>
+                Feed the cat
+            </li>
+        </ul>
+
+        <div id="buttons">
+            <button class="save">Save</button>
+            <button class="clear">Clear</button>
+            <button class="tipBtn">Tips</button>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <a href="#" class="closebtn">x</a>
+        <ul class="tips">
+            <li>Click clear button to remove all items from to-do list</li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
