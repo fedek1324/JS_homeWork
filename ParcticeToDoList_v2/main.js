@@ -19,6 +19,8 @@ ul.addEventListener("click", function(e) {
 function normalizeSequence() {
     var firstChecked = document.querySelector('ul li.checked');
     var secondChecked = document.querySelectorAll('ul li.checked')[1];
+    if (!firstChecked && !secondChecked)
+        return;
     if (secondChecked) {
         secondChecked.before(firstChecked);
     }
