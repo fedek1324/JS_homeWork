@@ -5,20 +5,20 @@ var closeBtn = document.querySelector('.closebtn');
 var clearBtn = document.querySelector('.clear');
 
 var overlay = document.getElementById('overlay');
+var jokeText = document.querySelector('.jokeText'); 
 
 var jokeBtn = document.querySelector('.jokeBtn');
 jokeBtn.addEventListener('click', function() {
     var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
-
+    request.open('GET', 'https://api.jokes.one/jod', true)
+    
     request.onload = function () {
         var data = JSON.parse(this.responseText);
-        data.forEach(obj => {
-            console.log(obj.title);
-        });
+        console.log(data.contents.jokes[0].joke.text);
+        jokeText.innerHTML = data.contents.jokes[0].joke.text;
     }
-
+    
     request.send()
 });
 

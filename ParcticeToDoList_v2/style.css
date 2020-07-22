@@ -65,6 +65,14 @@ body{
     color: black;
     border: 2px solid #86a8e7;
     }
+
+    .jokeText {
+        display:inline-block;
+        text-align:center;
+        width: 100%;
+        position:absolute;
+        bottom: 60px;
+    }
     
     #buttons{
     display:inline-block;
