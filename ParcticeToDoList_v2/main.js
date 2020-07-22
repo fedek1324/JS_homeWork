@@ -6,26 +6,47 @@ var clearBtn = document.querySelector('.clear');
 
 var overlay = document.getElementById('overlay');
 
+var jokeBtn = document.querySelector('.jokeBtn');
+jokeBtn.addEventListener('click', function() {
+    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+
+    request.onload = function () {
+        var data = JSON.parse(this.responseText);
+        data.forEach(obj => {
+            console.log(obj.title);
+        });
+    }
+
+    request.send()
+});
+
 ul.addEventListener("click", function(e) {
     console.log(e);
     var target = e.target;
     if(target.tagName == 'LI') {
         target.classList.toggle('checked');
-        normalizeSequence();
+        moveToCorrectPosition(target);
         save();
     }
 });
 
-function normalizeSequence() {
+function moveToCorrectPosition(li) {
     var firstChecked = document.querySelector('ul li.checked');
     var secondChecked = document.querySelectorAll('ul li.checked')[1];
-    if (!firstChecked && !secondChecked)
-        return;
-    if (secondChecked) {
-        secondChecked.before(firstChecked);
+    console.log('hi' );
+    if (li.classList.contains('checked')) {
+        if (secondChecked) {
+            secondChecked.before(li); //move li before secondChecked
+        }
+        else {
+            ul.append(li); // move to the end
+        }
     }
     else {
-        ul.append(firstChecked);
+        if(firstChecked)
+            firstChecked.before(li);
     }
 }
 
