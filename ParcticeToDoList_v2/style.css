@@ -102,6 +102,19 @@ body{
     transition: 0.5s;
     -webkit-transition: 0.5s;
     }
+    #jokeOverlay{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    }
     #overlay .closebtn {
     text-decoration: none;
     position: absolute;
@@ -111,7 +124,23 @@ body{
     color:#86a8e7;
     cursor: pointer;
     }
+    #jokeOverlay #jokeClosebtn {
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 60px;
+    color:#86a8e7;
+    cursor: pointer;
+    }
     #overlay li{
+    padding: 8px;
+    list-style-type:circle;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    }
+    #jokeOverlay li{
     padding: 8px;
     list-style-type:circle;
     font-size: 30px;
