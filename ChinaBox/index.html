@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>China box</title>
+  </head>
+  <body>
+    <h1 id="title">China box</h1>
+    <div id="container">
+      <form id="myForm">
+        <h5>Size of your box</h5>
+        <div class="choose">
+          <input type="radio" id="sizeChoice1" name="size" value="small" checked>
+          <label for="sizeChoice1">Small</label>
+          <br>
+          <input type="radio" id="sizeChoice2" name="size" value="large">
+          <label for="sizeChoice2">Large</label>
+        </div>
+        <h5>Souce and topping</h5>
+        <div class="choose">
+          <input type="radio" id="souceAndToppingChoice1" name="souceAndTopping" value="teriyakiAndPork" checked>
+          <label for="souceAndToppingChoice1">Teriyaki and pork</label>
+          <br>
+          <input type="radio" id="souceAndToppingChoice2" name="souceAndTopping" value="unagiAndBeef">
+          <label for="souceAndToppingChoice2">Unagi and beef</label>
+          <br>
+          <input type="radio" id="souceAndToppingChoice3" name="souceAndTopping" value="oysterAndChicken">
+          <label for="souceAndToppingChoice3">Oyster and chicken</label>
+        </div>
+        <h5>Extras</h5>
+        <div class="choose">
+          <input type="checkbox" id="extrasChoice1" name="extras" value="crackers">
+          <label for="extrasChoice1">Crackers</label>
+          <br>
+          <input type="checkbox" id="extrasChoice2" name="extras" value="extraDip">
+          <label for="extrasChoice2">ExtraDip</label>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+      <div id="total">
+        <span id="totalSum">0.00</span><small> rubles</small>
+        <br>
+        <span id="totalCalories">0</span><small> calories</small>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!--
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tips Calculator</title>
+  </head>
+  <body>
+    <h1 id="title">Tips calculator</h1>
+    <div id="container">
+      <div id="calculator">
+        <form>
+          <p>How much you paid?</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="number" id="bill_count" class="form-control" placeholder="Amount of dollars">
+          </div>
+
+          <p>How was service?</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="service_quality">Options</label>
+            </div>
+            <select class="custom-select" id="service_quality">
+            </select>
+          </div>
+
+          <p>How many people was on lunch?</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">People</span>
+            </div>
+            <input type="number" id="people_num" class="form-control" placeholder="Number of people" value="1">
+          </div>
+
+          <button type="button" id="calculate">Calculate!</button>
+
+        </form>
+      </div>
+      <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
+-->
